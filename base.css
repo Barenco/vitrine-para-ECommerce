@@ -121,6 +121,10 @@ a {
   vertical-align: top;
 }
 
+.pointer-section-left {
+  border-left: .5px solid #ddd
+}
+
 .pointer-image {
   margin-top: 50px
 }
