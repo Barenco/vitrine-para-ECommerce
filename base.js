@@ -26,7 +26,7 @@ function X(json) {
   // Creating the HTML for the recommendation products with the JSON datas
   document.getElementById('recommended-products').innerHTML = `${json.data.recommendation.map(function (item) {
     return `
-    <a href=#>
+    <a target="_blank" href=${item.detailUrl}>
       <div class="recommendation-item">
         <div class="recommendation-image-section">
           <img class="recommendation-image" src="http:${item.imageName}">
