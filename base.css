@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Hind+Madurai');
+
+body {
+  font-family: 'Hind Madurai', sans-serif;
+}
+
+.recommended-container {
+  border: 1px solid #C9DEED;
+  border-radius: 5px;
+  height: 340px;
+  width: 70%;
+  margin: auto;
+  -webkit-box-shadow: 2px 1px 5px 0px rgba(196,192,196,1);
+  -moz-box-shadow: 2px 1px 5px 0px rgba(196,192,196,1);
+  box-shadow: 2px 1px 5px 0px rgba(196,192,196,1);
+  padding: 0;
+}
+
+.recommended-title {
+  background: linear-gradient(#D5E7F2 50%,#C4DCED 50%);
+  height: 40px;
+  width: 100%;
+  color: #2D6084;
+  font-weight: bold;
+  /* font-family: 'PT+Sans','Hind Madurai', 'Arial', sans-serif; */
+  display: block;
+}
+
+.reference-title {
+  float: left;
+  width: 23%;
+}
+
+.recommendation-title {
+  float: left;
+}
+
+.reference-title-text {
+  margin: 6px 10px;
+  font-size: 1.25em;
+}
+
+/* .recommended-items {
+
+} */
+
+.reference-item-section {
+  display:inline-block;
+  width: 20%;
+  height: 288px;
+  vertical-align: top;
+}
+
+.reference-item {
+  display: inline-block;
+  height: 288px;
+  width: 100%;
+  text-align: center;
+  vertical-align: top;
+  margin: 10px 0;
+}
+
+.reference-image-section {
+  width: 90%;
+  margin: 8px auto 0;
+  height: 50%;
+  background-color: white;
+  border: 2px solid white;
+}
+
+.reference-info-section {
+  height: 55%;
+  padding: 0 5%;
+  text-align: left;
+  font-size: 0.8em;
+}
+
+.recommendation-items-section {
+  display: inline-block;
+  /* border: 1px solid blue; */
+  width: 71%;
+  height: 288px;
+  overflow: hidden;
+	white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+.recommendation-item {
+  display: inline-block;
+  height: 288px;
+  width: 26%;
+  text-align: center;
+  vertical-align: top;
+  margin: 10px 0;
+}
+
+.recommendation-item:hover {
+  background: linear-gradient(to bottom, #D5E7F2 ,#fff);
+}
+
+.recommendation-item:hover .recommendation-image-section {
+  border: 2px solid #C4DCED;
+}
+
+.recommendation-image-section {
+  width: 90%;
+  margin: 8px auto 0;
+  height: 50%;
+  background-color: white;
+  border: 2px solid white;
+}
+
+.recommendation-image {
+  max-width:100%;
+  max-height:100%;
+}
+
+.pointer-section {
+  display: inline-block;
+  width: 3%;
+  height: 258px;
+  vertical-align: top;
+}
+
+.pointer-image {
+  margin-top: 50px
+}
+
+.recommendation-info-section {
+  height: 55%;
+  padding: 0 5%;
+	white-space:normal;
+  text-align: left;
+  font-size: 0.8em;
+}
+
+.recommendation-info-name, .reference-info-name {
+  max-height: 35%;
+  margin: 0;
+}
+
+.recommendation-info-oldprice, .reference-info-oldprice {
+  margin: 0;
+}
+
+.recommendation-info-oldprice-value, .reference-info-oldprice-value {
+  font-weight: bold;
+}
+
+.recommendation-info-price, .reference-info-price {
+  margin: 0;
+  color: red;
+}
+
+.recommendation-info-price-value, .reference-info-price-value {
+  font-size: 1.05em;
+  font-weight: bold;
+  margin: 0;
+  color: red;
+}
+
+.recommendation-info-price-value-big, .reference-info-price-value-big {
+  font-size: 1.4em;
+}
+
+
+.recommendation-info-productinfo, .reference-info-productinfo {
+  margin: 0;
+  color: red;
+}
