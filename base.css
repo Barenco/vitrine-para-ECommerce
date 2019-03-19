@@ -4,6 +4,10 @@ body {
   font-family: 'Hind Madurai', sans-serif;
 }
 
+a {
+  color: inherit;
+}
+
 .recommended-container {
   border: 1px solid #C9DEED;
   border-radius: 5px;
