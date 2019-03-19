@@ -2,26 +2,28 @@
 function X(json) {
   // Creating the HTML for the reference product with the JSON datas
   document.getElementById('reference-product').innerHTML = `
-  <div class="reference-item">
-    <div class="reference-image-section">
-      <img class="reference-image" src="http:${json.data.reference.item.imageName}">
-    </div>
-    <div class="reference-info-section">
-      <p class="reference-info-name">${json.data.reference.item.name.substring(0,65)} ...</p>
-      ${json.data.reference.item.oldPrice ? `
-        <p class="reference-info-oldprice">De:
-          <span class="reference-info-oldprice-value">${json.data.reference.item.oldPrice}</span>
+  <a target="_blank" href=${json.data.reference.item.detailUrl}>
+    <div class="reference-item">
+      <div class="reference-image-section">
+        <img class="reference-image" src="http:${json.data.reference.item.imageName}">
+      </div>
+      <div class="reference-info-section">
+        <p class="reference-info-name">${json.data.reference.item.name.substring(0,65)} ...</p>
+        ${json.data.reference.item.oldPrice ? `
+          <p class="reference-info-oldprice">De:
+            <span class="reference-info-oldprice-value">${json.data.reference.item.oldPrice}</span>
+          </p>
+        ` : ``}
+        <p class="reference-info-price">Por:
+          <span class="reference-info-price-value recommendation-info-price-value-big">${json.data.reference.item.price}</span>
         </p>
-      ` : ``}
-      <p class="reference-info-price">Por:
-        <span class="reference-info-price-value recommendation-info-price-value-big">${json.data.reference.item.price}</span>
-      </p>
-      <p class="reference-info-productinfo">
-        <span class="reference-info-price-value">${json.data.reference.item.productInfo.paymentConditions}</span>
-      </p>
-      <p class="reference-info-productinfo">Sem juros</p>
+        <p class="reference-info-productinfo">
+          <span class="reference-info-price-value">${json.data.reference.item.productInfo.paymentConditions}</span>
+        </p>
+        <p class="reference-info-productinfo">Sem juros</p>
+      </div>
     </div>
-  </div>
+  </a>
   `
   // Creating the HTML for the recommendation products with the JSON datas
   document.getElementById('recommended-products').innerHTML = `${json.data.recommendation.map(function (item) {
