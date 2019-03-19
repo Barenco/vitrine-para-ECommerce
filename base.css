@@ -42,13 +42,13 @@ body {
 .reference-item-section {
   display:inline-block;
   width: 20%;
-  height: 288px;
+  height: 320px;
   vertical-align: top;
 }
 
 .reference-item {
   display: inline-block;
-  height: 288px;
+  height: 320px;
   width: 100%;
   text-align: center;
   vertical-align: top;
@@ -73,7 +73,7 @@ body {
 .recommendation-items-section {
   display: inline-block;
   width: 71%;
-  height: 288px;
+  height: 320px;
   overflow: hidden;
 	white-space: nowrap;
   scroll-behavior: smooth;
@@ -81,7 +81,7 @@ body {
 
 .recommendation-item {
   display: inline-block;
-  height: 288px;
+  height: 320px;
   width: 26%;
   text-align: center;
   vertical-align: top;

@@ -26,27 +26,28 @@ function X(json) {
   // Creating the HTML for the recommendation products with the JSON datas
   document.getElementById('recommended-products').innerHTML = `${json.data.recommendation.map(function (item) {
     return `
-    <div class="recommendation-item">
-      <div class="recommendation-image-section">
-        <img class="recommendation-image" src="http:${item.imageName}">
-      </div>
-      <div class="recommendation-info-section">
-        <p class="recommendation-info-name">${item.name.substring(0,65)} ...</p>
-        ${item.oldPrice ? `
-          <p class="recommendation-info-oldprice">De:
-            <span class="reference-info-oldprice-value">${item.oldPrice}</span>
+    <a href=#>
+      <div class="recommendation-item">
+        <div class="recommendation-image-section">
+          <img class="recommendation-image" src="http:${item.imageName}">
+        </div>
+        <div class="recommendation-info-section">
+          <p class="recommendation-info-name">${item.name.substring(0,65)} ...</p>
+          ${item.oldPrice ? `
+            <p class="recommendation-info-oldprice">De:
+              <span class="reference-info-oldprice-value">${item.oldPrice}</span>
+            </p>
+          ` : ``}
+          <p class="recommendation-info-price">Por:
+            <span class="recommendation-info-price-value recommendation-info-price-value-big">${item.price}</span>
           </p>
-        ` : ``}
-        <p class="recommendation-info-price">Por:
-          <span class="recommendation-info-price-value recommendation-info-price-value-big">${item.price}</span>
-        </p>
-        <p class="recommendation-info-productinfo">
-          <span class="recommendation-info-price-value">${item.productInfo.paymentConditions}</span>
-        </p>
-        <p class="recommendation-info-productinfo">Sem juros</p>
+          <p class="recommendation-info-productinfo">
+            <span class="recommendation-info-price-value">${item.productInfo.paymentConditions}</span>
+          </p>
+          <p class="recommendation-info-productinfo">Sem juros</p>
+        </div>
       </div>
-
-    </div>
+    </a>
     `
   }).join('')}`;
 
